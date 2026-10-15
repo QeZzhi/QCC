@@ -1,0 +1,17 @@
+   0  PUSH  10
+   1  STORE x
+   2  LOAD  x
+   3  PUSH  2
+   4  MUL  
+   5  PUSH  3
+   6  ADD  
+   7  STORE y
+   8  LOAD  y
+   9  PRINT
+  10  PUSH  1
+  11  PUSH  2
+  12  ADD  
+  13  PUSH  3
+  14  MUL  
+  15  PRINT
+  16  HALT 

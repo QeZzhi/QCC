@@ -1,0 +1,21 @@
+   0  PUSH  1
+   1  PUSH  2
+   2  ADD  
+   3  PUSH  3
+   4  SUB  
+   5  PRINT
+   6  PUSH  8
+   7  PUSH  2
+   8  DIV  
+   9  PUSH  2
+  10  DIV  
+  11  PRINT
+  12  PUSH  2
+  13  PUSH  3
+  14  MUL  
+  15  PUSH  4
+  16  PUSH  5
+  17  MUL  
+  18  ADD  
+  19  PRINT
+  20  HALT 
