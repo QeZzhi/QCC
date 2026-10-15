@@ -24,8 +24,8 @@ trap 'rm -rf "$TMP"' EXIT
 passed=0
 failed=0
 
-for src in "$CASES"/*.qpp; do
-    name=$(basename "$src" .qpp)
+for src in "$CASES"/*.q; do
+    name=$(basename "$src" .q)
     want_exit=0
     if [ -f "$EXPECTED/$name.exit" ]; then
         want_exit=$(cat "$EXPECTED/$name.exit")
