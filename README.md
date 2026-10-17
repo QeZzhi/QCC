@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.gitskins.com/api/section/wordmark?username=QeZzhi&theme=aurora&label=QCC (Qora Compiler Collection)%20(Qora%20Compiler%20Collection)" width="100%" alt="QCC Wordmark" />
+  <img src="https://www.gitskins.com/api/section/wordmark?username=QeZzhi&theme=aurora&label=QCC%20(Qora%20Compiler%20Collection)" width="100%" alt="QCC Wordmark" />
 </p>
 
 # QCC (Qora Compiler Collection) 🛠️
