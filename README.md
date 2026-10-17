@@ -1,4 +1,6 @@
-![QCC Banner](banner.svg)
+<p align="center">
+  <img src="https://www.gitskins.com/api/section/wordmark?username=QeZzhi&theme=aurora&label=QCC%20Torvalds" width="100%" alt="3D ASCII wordmark for Linus Torvalds" />
+</p>
 
 # QCC (Qora Compiler Collection) 🛠️
 
