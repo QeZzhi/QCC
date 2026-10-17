@@ -1,4 +1,4 @@
-[QCC Banner](banner.svg)
+![QCC Banner](banner.svg)
 
 # QCC (Qora Compiler Collection) 🛠️
 
