@@ -1,3 +1,5 @@
+[QCC Banner](banner.svg)
+
 # QCC (Qora Compiler Collection) 🛠️
 
 **Компилятор для языка программирования Qora, написанный на C.**
