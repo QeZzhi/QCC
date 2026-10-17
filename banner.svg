@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <!-- Градиентный фон -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#1f2428"/>
+    </linearGradient>
+    
+    <!-- Неоновое свечение -->
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="800" height="200" fill="url(#bgGrad)" rx="15" stroke="#30363d" stroke-width="2"/>
+
+  <!-- Фоновый код (еле заметный) -->
+  <g fill="#238636" opacity="0.15" font-family="monospace" font-size="14">
+    <!-- Левая часть: Лексер -->
+    <text x="20" y="40">// Lexer Phase</text>
+    <text x="20" y="60">Token: IDENTIFIER</text>
+    <text x="20" y="80">Token: ASSIGN</text>
+    <text x="20" y="100">Token: NUMBER</text>
+    
+    <!-- Правая часть: Codegen -->
+    <text x="600" y="40">// Codegen Phase</text>
+    <text x="600" y="60">LOAD R1, 42</text>
+    <text x="600" y="80">STORE R2, R1</text>
+    <text x="600" y="100">PUSH R2</text>
+  </g>
+
+  <!-- Главный текст (Название) -->
+  <g filter="url(#neonGlow)">
+    <text x="400" y="100" font-family="monospace" font-size="56" font-weight="bold" fill="#58a6ff" text-anchor="middle" letter-spacing="3">
+      QCC
+    </text>
+  </g>
+  
+  <!-- Подзаголовок -->
+  <text x="400" y="135" font-family="monospace" font-size="16" fill="#8b949e" text-anchor="middle" letter-spacing="2">
+    QORA COMPILER COLLECTION
+  </text>
+
+  <!-- Мигающий курсор -->
+  <g>
+    <rect x="360" y="155" width="12" height="18" fill="#3fb950">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="380" y="155" width="12" height="18" fill="#3fb950">
+      <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="400" y="155" width="12" height="18" fill="#3fb950">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="420" y="155" width="12" height="18" fill="#3fb950">
+      <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+</svg>
