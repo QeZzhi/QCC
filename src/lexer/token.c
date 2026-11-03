@@ -18,6 +18,7 @@ const char* token_type_name(TokenType type) { // Имя типа токена | 
         case TOK_LET:       return "'let'";          // Ключевое слово let | let keyword
         case TOK_IDENT:     return "identifier";     // Идентификатор | Identifier
         case TOK_NUMBER:    return "number";         // Число | Number
+        case TOK_STRING:    return "string";         // Строка | String
         case TOK_ASSIGN:    return "'='";            // Присваивание | Assignment
         case TOK_PLUS:      return "'+'";            // Плюс | Plus
         case TOK_MINUS:     return "'-'";            // Минус | Minus
@@ -32,6 +33,7 @@ const char* token_type_name(TokenType type) { // Имя типа токена | 
         case TOK_LBRACE:    return "'{'";            // Левая фигурная | Left brace
         case TOK_RBRACE:    return "'}'";            // Правая фигурная | Right brace
         case TOK_SEMICOLON: return "';'";            // Точка с запятой | Semicolon
+        case TOK_COMMA:     return "','";            // Запятая | Comma
         case TOK_END:       return "end of file";    // Конец файла | End of file
     }
     return "unknown token"; // Неизвестный токен | Unknown token

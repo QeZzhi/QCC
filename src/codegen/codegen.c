@@ -27,6 +27,13 @@ static int gen_node(Bytecode* bc, const ASTNode* node) { // Генерация �
             return 0; // Успех | Success
         }
         
+        case NODE_STRING: {
+            const StringNode* n = (const StringNode*)node;
+            // Мы просто кладем строку в байткод как аргумент
+            bytecode_add(bc, OP_PRINT_STR, n->value);
+            return 0;
+        }
+        
         // ----- Узел-переменная -----
         case NODE_VAR: { // Переменная | Variable
             const VarNode* n = (const VarNode*)node; // Приводим к VarNode | Cast to VarNode
@@ -46,7 +53,12 @@ static int gen_node(Bytecode* bc, const ASTNode* node) { // Генерация �
         case NODE_PRINT: { // Print | Print
             const PrintNode* n = (const PrintNode*)node; // Приводим к PrintNode | Cast to PrintNode
             if (gen_node(bc, n->value) != 0) return -1; // Генерируем выражение | Generate expression
-            bytecode_add(bc, OP_PRINT, ""); // Добавляем инструкцию PRINT | Add PRINT instruction
+            
+            // Если это была строка, она уже добавила PRINT_STR.
+            // Поэтому добавляем OP_PRINT только для чисел/выражений.
+            if (n->value->type != NODE_STRING) {
+                bytecode_add(bc, OP_PRINT, ""); // Добавляем инструкцию PRINT | Add PRINT instruction
+            }
             return 0; // Успех | Success
         }
         

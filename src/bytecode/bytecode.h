@@ -12,18 +12,18 @@
 // OpCode — коды операций байт-кода
 // Каждая инструкция имеет свой код операции
 // ------------------------------------------------------------
-typedef enum { // Перечисление кодов операций | Enum of operation codes
-    OP_PUSH,   // Положить значение на стек | Push value to stack
-    OP_LOAD,   // Загрузить переменную на стек | Load variable to stack
-    OP_STORE,  // Сохранить значение в переменную | Store value to variable
-    OP_ADD,    // Сложение | Addition
-    OP_SUB,    // Вычитание | Subtraction
-    OP_MUL,    // Умножение | Multiplication
-    OP_DIV,    // Деление | Division
-    OP_PRINT,  // Вывод на экран | Print to screen
-    OP_HALT    // Остановка выполнения | Halt execution
-} OpCode; // Конец перечисления OpCode | End of OpCode enum
-
+typedef enum {
+    OP_PUSH,   
+    OP_LOAD,   
+    OP_STORE,  
+    OP_ADD,    
+    OP_SUB,    
+    OP_MUL,    
+    OP_DIV,    
+    OP_PRINT,  // Вывод числа
+    OP_PRINT_STR, // Вывод строки (НОВЫЙ)
+    OP_HALT
+} OpCode;
 // ------------------------------------------------------------
 // Instruction — одна инструкция байт-кода
 // op — что делать, arg — с чем (число, имя переменной)

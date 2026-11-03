@@ -66,6 +66,7 @@ static const char* opcode_name(OpCode op) { // Функция получения
         case OP_MUL:   return "MUL"; // Умножение | Multiplication
         case OP_DIV:   return "DIV"; // Деление | Division
         case OP_PRINT: return "PRINT"; // Вывод | Print
+        case OP_PRINT_STR: return "PRINT_STR"; // Вывод строки | Print string
         case OP_HALT:  return "HALT"; // Остановка | Halt
     } // Скобка закрывающая проверку switch | Bracket that closes the switch check |
     return "???"; // Неизвестная операция | Unknown operation
