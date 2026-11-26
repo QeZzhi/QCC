@@ -5,7 +5,7 @@
 // Converts AST (parse tree) into bytecode for QezVM.
 // ============================================================
 
-#include "codegen/codegen.h" // Подключение заголовка codegen | Connecting codegen header
+#include "codegen.h" // Подключение заголовка codegen | Connecting codegen header
 
 #include <stdio.h>  // fprintf, snprintf | fprintf, snprintf
 #include <string.h> // strcmp | strcmp

@@ -6,10 +6,10 @@
 // ============================================================
 
 
-#include "bytecode/bytecode.h" // Подключение заголовка байт-кода | Connecting bytecode header
+#include "bytecode.h" // Подключение заголовка байт-кода | Connecting bytecode header
 #include <stdio.h>  // printf для отладки | printf for debugging
 #include <stdlib.h> // free для освобождения памяти | free for memory release
-#include "common/xalloc.h" // xmalloc, xrealloc, xstrdup | xmalloc, xrealloc, xstrdup
+#include "../common/xalloc.h" // xmalloc, xrealloc, xstrdup | xmalloc, xrealloc, xstrdup
 
 #define BYTECODE_INITIAL_CAPACITY 16 // Начальная ёмкость массива инструкций | Initial instruction array capacity
 

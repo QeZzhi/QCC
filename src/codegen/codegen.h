@@ -8,8 +8,8 @@
 #ifndef QCC_CODEGEN_H // Если QCC_CODEGEN_H ещё не определён | If QCC_CODEGEN_H is not defined yet
 #define QCC_CODEGEN_H // Определяем QCC_CODEGEN_H | Define QCC_CODEGEN_H
 
-#include "ast/ast.h"           // Нужны типы AST (BlockNode, ASTNode) | Need AST types (BlockNode, ASTNode)
-#include "bytecode/bytecode.h" // Нужен тип Bytecode | Need Bytecode type
+#include "../ast/ast.h"           // Нужны типы AST (BlockNode, ASTNode) | Need AST types (BlockNode, ASTNode)
+#include "../bytecode/bytecode.h" // Нужен тип Bytecode | Need Bytecode type
 
 /* Возвращает NULL, если генерация невозможна (сообщение уже в stderr). */
 // Returns NULL if generation is impossible (message already in stderr).

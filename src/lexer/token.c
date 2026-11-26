@@ -5,7 +5,7 @@
 // Token is the smallest unit of code (number, identifier, operator).
 // ============================================================
 
-#include "lexer/token.h" // Подключение заголовка токенов | Connecting token header
+#include "token.h" // Подключение заголовка токенов | Connecting token header
 
 #include <stdlib.h> // free | free
 

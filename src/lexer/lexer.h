@@ -10,7 +10,7 @@
 
 #include <stddef.h> // size_t | size_t
 
-#include "lexer/token.h" // Типы Token и TokenType | Token and TokenType types
+#include "token.h" // Типы Token и TokenType | Token and TokenType types
 
 // ------------------------------------------------------------
 // Lexer — структура лексера

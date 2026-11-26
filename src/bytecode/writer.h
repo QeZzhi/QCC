@@ -1,7 +1,7 @@
 #ifndef QCC_BYTECODE_WRITER_H
 #define QCC_BYTECODE_WRITER_H
 
-#include "bytecode/bytecode.h"
+#include "bytecode.h"
 #include <stdio.h>
 
 // Сохранить байткод в бинарный файл .qc

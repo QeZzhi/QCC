@@ -8,8 +8,8 @@
 #ifndef QCC_PARSER_H // Если QCC_PARSER_H ещё не определён | If QCC_PARSER_H is not defined yet
 #define QCC_PARSER_H // Определяем QCC_PARSER_H | Define QCC_PARSER_H
 
-#include "ast/ast.h"        // Нужны типы AST (BlockNode, ASTNode) | Need AST types (BlockNode, ASTNode)
-#include "lexer/token.h"    // Нужны типы Token и TokenType | Need Token and TokenType types
+#include "../ast/ast.h"        // Нужны типы AST (BlockNode, ASTNode) | Need AST types (BlockNode, ASTNode)
+#include "../lexer/token.h"    // Нужны типы Token и TokenType | Need Token and TokenType types
 
 // ------------------------------------------------------------
 // Parser — структура парсера

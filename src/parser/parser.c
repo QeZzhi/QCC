@@ -1,7 +1,7 @@
-#include "parser/parser.h"
+#include "parser.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "common/xalloc.h"
+#include "../common/xalloc.h"
 
 Parser* parser_create(Token* tokens, int count) {
     Parser* p = xmalloc(sizeof(Parser));

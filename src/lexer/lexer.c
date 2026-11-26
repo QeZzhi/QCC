@@ -5,11 +5,11 @@
 // Converts Qora source code into a list of tokens.
 // ============================================================
 
-#include "lexer/lexer.h"
+#include "lexer.h"
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
-#include "common/xalloc.h"
+#include "../common/xalloc.h"
 
 #define LEXER_INITIAL_CAPACITY 16
 
